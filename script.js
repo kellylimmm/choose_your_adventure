@@ -23,54 +23,42 @@ var inputHappened = function(currentInput){
 if(currentInput === "Door 1") {
 var doorChoice = "Door 1";
     return("You entered " + doorChoice + "." + "You see a matchstick and water. Which would you like to pick up?")
+}   else if (currentInput === "Matchstick") {
+    return("You can now see the dungeon clearer. You see a key and a knife. Which would you pick?")
+}   else if (currentInput === "Key"){
+    // Outcome of choice 2. Choose key or knife. In this case, person chose Key.
+    return("You have opened the secret passage way. You found a hammer and a screw. Pick carefully.")
 }
 
-// Choice 2 of matchstick and water. In this case, person chose Matchstick.
-        // var choice_M_W = currentInput;
-        if (currentInput === "Matchstick") {
-        return("You can now see the dungeon clearer. You see a key and a knife. Which would you pick?")
-        }
-// Outcome of choice 2. Choose key or knife. In this case, person chose Key.
-            // var choice_K_K = currentInput;
-            if (currentInput === "Key"){
-            return("You have opened the secret passage way. You found a hammer and a screw. Pick carefully.")
-            }
 
 // Choose between Hammer or Screw from Choice 3. User chosed Hammer.
-            // var choice_H_S = currentInput;
-            if (currentInput === "Hammer"){
-            return("You can hit the wooden door to knock it down. You can now see a bit of light. ")
-            } // Choose between Hammer or Screw from Choice 3. User chosed Screw.
-            // var choice_H_S = currentInput;
-            else if (currentInput === "Screw"){
-            return("Sorry, the screw is too big to open the door or do anything. You are now stuck. Please try again.")
-            }// Choose between Key or Knife. User chooses Knife.
-            // var choice_K_K = currentInput;
-            else if (currentInput = "Knife") {
-            return("You see an unknown creature in front. Do you stab with knife or greet?")
-            }
+    else if (currentInput === "Hammer"){
+    return("You can hit the wooden door to knock it down. You can now see a bit of light. ")
+}   else if (currentInput === "Screw"){
+    return("Sorry, the screw is too big to open the door or do anything. You are now stuck. Please try again.")
+}   else if (currentInput = "Knife"){
+    return("You see an unknown creature in front. Do you stab with knife or greet?")
+}
 
 // Outcome of Choice7. Stab or Greet. User chooses Greet.
-            // var choice_S_G = currentInput;
-            if (currentInput === "Greet")
-            console.log("Greet");
-            {
-            return("Let me show you the way. Follow me.")
-            }
+    else if (currentInput === "Greet"){
+    return("Let me show you the way. Follow me.")
+}
 // Outcome of Choice7. Stab or Greet. User chooses Stab.
-            // var choice_S_G = currentInput;
-            if (currentInput === "Stab") {
-            return("You have killed the creature who can save you. Game over.")
-            }
+    else if (currentInput === "Stab"){
+    return("You have killed the creature who can save you. Game over.")
+}
+
+
+
+
+
 
 
 // Choice 2 of matchstick and water. In this case, person chose Water.
-
-
-            // var choice_M_W = currentInput;
-            if (currentInput = "Water"){
-            return("Do you want to drink the water or keep for later use?")
-            }
+    if (currentInput = "Water"){
+    return("Do you want to drink the water or keep for later use?")
+}
 
 //Outcome of choice 2. In this case, person chose water.
 
